@@ -4,7 +4,7 @@ var request = require('supertest')("http://api.postcodes.io");
 var expect = require('chai').expect;
 
 describe('This is a test demo', function () {
-    it('Should get a response', function(){
+    it('Should get a response', function(done){
         request
             .get('/postcodes/' + "SW1A 1AA")
             .end(function(err, res){
