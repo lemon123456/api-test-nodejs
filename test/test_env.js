@@ -1,6 +1,6 @@
 'use strict';
 
-var data = require('../config/env');
+var data = require('./config/env');
 var request = require('supertest')(data().url);
 
 describe('Test Demo.', function() {

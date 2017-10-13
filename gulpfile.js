@@ -3,12 +3,12 @@ const mocha = require('gulp-mocha');
 const gutil = require('gulp-util');
 
 gulp.task('test', function () {
-    require('./config/env')('test');
+    require('./test/config/env')('test');
     runTest();
 });
 
 gulp.task('prod', function () {
-    require('./config/env')('prod');
+    require('./test/config/env')('prod');
     runTest();
 });
 
